@@ -1,0 +1,38 @@
+# File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
+
+from __future__ import annotations
+
+from typing_extensions import Literal, Required, Annotated, TypedDict
+
+from ....._utils import PropertyInfo
+
+__all__ = ["ExportAddParams"]
+
+
+class ExportAddParams(TypedDict, total=False):
+    access_token: Required[Annotated[str, PropertyInfo(alias="AccessToken")]]
+    """Access token of the client application."""
+
+    client: Required[Annotated[str, PropertyInfo(alias="Client")]]
+    """Name and version of the client application."""
+
+    client_token: Required[Annotated[str, PropertyInfo(alias="ClientToken")]]
+    """Token identifying the client application."""
+
+    entity_type: Required[
+        Annotated[
+            Literal[
+                "OrderItem",
+                "Payment",
+                "Reservation",
+                "Customer",
+                "Company",
+                "Bill",
+                "AvailabilityAdjustment",
+                "AvailabilityBlock",
+                "ResourceBlock",
+            ],
+            PropertyInfo(alias="EntityType"),
+        ]
+    ]
+    """Type of exported entities"""
