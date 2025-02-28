@@ -144,7 +144,7 @@ class TestPayments:
                 "discriminator": "Ideal",
                 "ideal": {"redirect_url": "https://example.com"},
                 "sepa_direct_debit": {
-                    "email": "dev@stainlessapi.com",
+                    "email": "dev@stainless.com",
                     "iban": "x",
                     "name": "x",
                     "remote_ip_address": "x",
@@ -547,7 +547,7 @@ class TestAsyncPayments:
                 "discriminator": "Ideal",
                 "ideal": {"redirect_url": "https://example.com"},
                 "sepa_direct_debit": {
-                    "email": "dev@stainlessapi.com",
+                    "email": "dev@stainless.com",
                     "iban": "x",
                     "name": "x",
                     "remote_ip_address": "x",
