@@ -65,7 +65,7 @@ class Pymews(SyncAPIClient):
         # part of our public interface in the future.
         _strict_response_validation: bool = False,
     ) -> None:
-        """Construct a new synchronous pymews client instance."""
+        """Construct a new synchronous Pymews client instance."""
         if base_url is None:
             base_url = os.environ.get("PYMEWS_BASE_URL")
         if base_url is None:
@@ -212,7 +212,7 @@ class AsyncPymews(AsyncAPIClient):
         # part of our public interface in the future.
         _strict_response_validation: bool = False,
     ) -> None:
-        """Construct a new async pymews client instance."""
+        """Construct a new async AsyncPymews client instance."""
         if base_url is None:
             base_url = os.environ.get("PYMEWS_BASE_URL")
         if base_url is None:
