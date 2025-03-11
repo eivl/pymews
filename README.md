@@ -72,6 +72,25 @@ Nested request parameters are [TypedDicts](https://docs.python.org/3/library/typ
 
 Typed requests and responses provide autocomplete and documentation within your editor. If you would like to see type errors in VS Code to help catch bugs earlier, set `python.analysis.typeCheckingMode` to `basic`.
 
+## Nested params
+
+Nested parameters are dictionaries, typed using `TypedDict`, for example:
+
+```python
+from pymews import Pymews
+
+client = Pymews()
+
+response = client.api.connector.v1.add_order(
+    access_token="7059D2C25BF64EA681ACAB3A00B859CC-D91BFF2B1E3047A3E0DEC1D57BE1382",
+    client="Sample Client 1.0.0",
+    client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
+    service_id="d2129910-1da9-4d39-be14-ab3a00c9e70c",
+    options={"disable_item_grouping": True},
+)
+print(response.options)
+```
+
 ## Handling errors
 
 When the library is unable to connect to the API (for example, due to network connection problems or a timeout), a subclass of `pymews.APIConnectionError` is raised.
