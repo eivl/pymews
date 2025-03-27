@@ -1,2 +1,4 @@
 configured_endpoints: 188
 openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/eivl%2Fpymews-e39036ac8e22182daf434b501c3bc59b2109767c9cf0f4ed8ede0188776211af.yml
+openapi_spec_hash: 45fccc9f484cc062bbb59dd73d391194
+config_hash: 82d9c8ff1c39224af5d77730185079f5
