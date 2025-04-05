@@ -81,14 +81,16 @@ from pymews import Pymews
 
 client = Pymews()
 
-response = client.api.connector.v1.add_order(
-    access_token="7059D2C25BF64EA681ACAB3A00B859CC-D91BFF2B1E3047A3E0DEC1D57BE1382",
+account_notes = client.api.connector.v1.account_notes.list(
+    access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
     client="Sample Client 1.0.0",
     client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-    service_id="d2129910-1da9-4d39-be14-ab3a00c9e70c",
-    options={"disable_item_grouping": True},
+    limitation={
+        "count": 100,
+        "cursor": "e7f26210-10e7-462e-9da8-ae8300be8ab7",
+    },
 )
-print(response.options)
+print(account_notes.limitation)
 ```
 
 ## Handling errors
