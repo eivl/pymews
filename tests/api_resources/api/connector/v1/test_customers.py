@@ -55,7 +55,7 @@ class TestCustomers:
             birth_place="Pescara (BI)",
             car_registration_number="AA 111AA",
             chain_id="3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            classifications=["PaymasterAccount", "Blacklist"],
+            classifications=["Media", "FriendOrFamily"],
             company_id="f3b4f0af-9558-463b-8452-07a9bc414708",
             dietary_requirements="DietaryRequirements",
             drivers_license={
@@ -93,7 +93,7 @@ class TestCustomers:
             second_last_name="SecondLastName",
             sex="Male",
             tax_identification_number="ZGNZLR17U72P554F",
-            title="Mister",
+            title="Miss",
             visa={
                 "expiration": parse_date("2019-12-27"),
                 "issuance": parse_date("2019-12-27"),
@@ -164,7 +164,7 @@ class TestCustomers:
                 "count": 10,
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             company_ids=["c6f5c82d-621a-4c8a-903b-1b0a9a23b71f"],
             created_utc={
@@ -254,7 +254,7 @@ class TestCustomers:
             birth_place="Pescara (BI)",
             car_registration_number="AA 111AA",
             chain_id="3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            classifications=["PaymasterAccount", "Blacklist"],
+            classifications=["Media", "FriendOrFamily"],
             company_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             dietary_requirements="DietaryRequirements",
             drivers_license={
@@ -291,7 +291,7 @@ class TestCustomers:
             second_last_name="SecondLastName",
             sex="Male",
             tax_identification_number="ZGNZLR17U72P554F",
-            title="Mister",
+            title="Miss",
             visa={
                 "expiration": parse_date("2019-12-27"),
                 "issuance": parse_date("2019-12-27"),
@@ -596,7 +596,7 @@ class TestAsyncCustomers:
             birth_place="Pescara (BI)",
             car_registration_number="AA 111AA",
             chain_id="3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            classifications=["PaymasterAccount", "Blacklist"],
+            classifications=["Media", "FriendOrFamily"],
             company_id="f3b4f0af-9558-463b-8452-07a9bc414708",
             dietary_requirements="DietaryRequirements",
             drivers_license={
@@ -634,7 +634,7 @@ class TestAsyncCustomers:
             second_last_name="SecondLastName",
             sex="Male",
             tax_identification_number="ZGNZLR17U72P554F",
-            title="Mister",
+            title="Miss",
             visa={
                 "expiration": parse_date("2019-12-27"),
                 "issuance": parse_date("2019-12-27"),
@@ -705,7 +705,7 @@ class TestAsyncCustomers:
                 "count": 10,
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             company_ids=["c6f5c82d-621a-4c8a-903b-1b0a9a23b71f"],
             created_utc={
@@ -795,7 +795,7 @@ class TestAsyncCustomers:
             birth_place="Pescara (BI)",
             car_registration_number="AA 111AA",
             chain_id="3fa85f64-5717-4562-b3fc-2c963f66afa6",
-            classifications=["PaymasterAccount", "Blacklist"],
+            classifications=["Media", "FriendOrFamily"],
             company_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             dietary_requirements="DietaryRequirements",
             drivers_license={
@@ -832,7 +832,7 @@ class TestAsyncCustomers:
             second_last_name="SecondLastName",
             sex="Male",
             tax_identification_number="ZGNZLR17U72P554F",
-            title="Mister",
+            title="Miss",
             visa={
                 "expiration": parse_date("2019-12-27"),
                 "issuance": parse_date("2019-12-27"),

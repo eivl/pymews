@@ -82,7 +82,7 @@ class TestLoyaltyTiers:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             loyalty_program_ids=["3ed9e2f3-4bba-4df6-8d41-ab1b009b6425", "8a98965a-7c03-48a1-a28c-ab1b009b53c8"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             limitation={
                 "count": 100,
@@ -320,7 +320,7 @@ class TestAsyncLoyaltyTiers:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             loyalty_program_ids=["3ed9e2f3-4bba-4df6-8d41-ab1b009b6425", "8a98965a-7c03-48a1-a28c-ab1b009b53c8"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             limitation={
                 "count": 100,

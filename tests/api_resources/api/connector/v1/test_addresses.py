@@ -109,7 +109,7 @@ class TestAddresses:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             account_ids=["3db2c989-7d95-42b4-a502-a9f246db1634"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             address_ids=["fc7b2df3-de66-48a6-907d-af4600ecd892"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             updated_utc={
@@ -365,7 +365,7 @@ class TestAsyncAddresses:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             account_ids=["3db2c989-7d95-42b4-a502-a9f246db1634"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             address_ids=["fc7b2df3-de66-48a6-907d-af4600ecd892"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             updated_utc={

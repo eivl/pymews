@@ -47,7 +47,7 @@ class TestPayments:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             account_ids=["fadd5bb6-b428-45d5-94f8-fd0d89fece6d"],
-            accounting_states=["Open", "Closed"],
+            accounting_states=["Closed", "Open"],
             bill_ids=["ea087d64-3901-4eee-b0b7-9fce4c58a005", "d23ac52f-9b86-4a03-a6fe-5822dfcfc5c4"],
             charged_utc={
                 "end_utc": parse_datetime("2023-03-31T00:00:00Z"),
@@ -69,7 +69,7 @@ class TestPayments:
                 "end_utc": parse_datetime("2023-03-31T00:00:00Z"),
                 "start_utc": parse_datetime("2023-03-01T00:00:00Z"),
             },
-            states=["Charged", "Canceled"],
+            states=["Charged", "Pending"],
             type="Payment",
             updated_utc={
                 "end_utc": parse_datetime("2023-03-31T00:00:00Z"),
@@ -321,7 +321,7 @@ class TestPayments:
             external_identifier="b06de5e4-7137-47ec-8a49-3303131b02c0",
             notes="Notes",
             reservation_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            type="Unspecified",
+            type="Cash",
         )
         assert_matches_type(PaymentAddExternalResponse, payment, path=["response"])
 
@@ -450,7 +450,7 @@ class TestAsyncPayments:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             account_ids=["fadd5bb6-b428-45d5-94f8-fd0d89fece6d"],
-            accounting_states=["Open", "Closed"],
+            accounting_states=["Closed", "Open"],
             bill_ids=["ea087d64-3901-4eee-b0b7-9fce4c58a005", "d23ac52f-9b86-4a03-a6fe-5822dfcfc5c4"],
             charged_utc={
                 "end_utc": parse_datetime("2023-03-31T00:00:00Z"),
@@ -472,7 +472,7 @@ class TestAsyncPayments:
                 "end_utc": parse_datetime("2023-03-31T00:00:00Z"),
                 "start_utc": parse_datetime("2023-03-01T00:00:00Z"),
             },
-            states=["Charged", "Canceled"],
+            states=["Charged", "Pending"],
             type="Payment",
             updated_utc={
                 "end_utc": parse_datetime("2023-03-31T00:00:00Z"),
@@ -724,7 +724,7 @@ class TestAsyncPayments:
             external_identifier="b06de5e4-7137-47ec-8a49-3303131b02c0",
             notes="Notes",
             reservation_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
-            type="Unspecified",
+            type="Cash",
         )
         assert_matches_type(PaymentAddExternalResponse, payment, path=["response"])
 

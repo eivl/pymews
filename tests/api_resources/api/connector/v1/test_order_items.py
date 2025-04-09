@@ -63,7 +63,7 @@ class TestOrderItems:
             order_item_ids=["3e982ab5-6245-4c39-80af-1118d40e7494", "bd11dc4a-8f9e-442b-bb1e-f5361b31dfa2"],
             service_ids=["294c7859-63ba-46ad-a8bf-34fad2019383", "05089c0c-5d55-4756-827b-c4bcee1edf00"],
             service_order_ids=["ac5ef5eb-c5b2-4083-879f-83f04a5ebda5", "5d603823-b40a-43a4-8244-d5d2b515deb5"],
-            types=["CancellationFee", "NightRebate"],
+            types=["CityTax", "SpaceOrder"],
             updated_utc={
                 "end_utc": parse_datetime("2023-03-31T00:00:00Z"),
                 "start_utc": parse_datetime("2023-03-01T00:00:00Z"),
@@ -207,7 +207,7 @@ class TestAsyncOrderItems:
             order_item_ids=["3e982ab5-6245-4c39-80af-1118d40e7494", "bd11dc4a-8f9e-442b-bb1e-f5361b31dfa2"],
             service_ids=["294c7859-63ba-46ad-a8bf-34fad2019383", "05089c0c-5d55-4756-827b-c4bcee1edf00"],
             service_order_ids=["ac5ef5eb-c5b2-4083-879f-83f04a5ebda5", "5d603823-b40a-43a4-8244-d5d2b515deb5"],
-            types=["CancellationFee", "NightRebate"],
+            types=["CityTax", "SpaceOrder"],
             updated_utc={
                 "end_utc": parse_datetime("2023-03-31T00:00:00Z"),
                 "start_utc": parse_datetime("2023-03-01T00:00:00Z"),

@@ -128,7 +128,7 @@ class TestBills:
                 "end_utc": parse_datetime("2019-12-27T18:11:19.117Z"),
                 "start_utc": parse_datetime("2019-12-27T18:11:19.117Z"),
             },
-            state="Open",
+            state="Closed",
             updated_utc={
                 "end_utc": parse_datetime("2020-02-10T00:00:00Z"),
                 "start_utc": parse_datetime("2020-02-05T00:00:00Z"),
@@ -552,7 +552,7 @@ class TestAsyncBills:
                 "end_utc": parse_datetime("2019-12-27T18:11:19.117Z"),
                 "start_utc": parse_datetime("2019-12-27T18:11:19.117Z"),
             },
-            state="Open",
+            state="Closed",
             updated_utc={
                 "end_utc": parse_datetime("2020-02-10T00:00:00Z"),
                 "start_utc": parse_datetime("2020-02-05T00:00:00Z"),

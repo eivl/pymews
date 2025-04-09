@@ -57,7 +57,7 @@ class TestRestrictions:
             end_utc="EndUtc",
             enterprise_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "4d0201db-36f5-428b-8d11-4f0a65e960cc"],
             exact_rate_ids=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
-            origin="User",
+            origin="Integration",
             rate_ids=["ed4b660b-19d0-434b-9360-a4de2ea42eda"],
             resource_category_ids=["34c29e73-c8db-4e93-b51b-981e42655e03"],
             restriction_ids=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
@@ -154,7 +154,7 @@ class TestRestrictions:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             client="x",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-            restrictions=[{"conditions": {"type": "Stay"}}, {"conditions": {"type": "Stay"}}],
+            restrictions=[{"conditions": {"type": "Start"}}, {"conditions": {"type": "Start"}}],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
         )
         assert_matches_type(RestrictionAddResponse, restriction, path=["response"])
@@ -166,7 +166,7 @@ class TestRestrictions:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             client="x",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-            restrictions=[{"conditions": {"type": "Stay"}}, {"conditions": {"type": "Stay"}}],
+            restrictions=[{"conditions": {"type": "Start"}}, {"conditions": {"type": "Start"}}],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
         )
 
@@ -182,7 +182,7 @@ class TestRestrictions:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             client="x",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-            restrictions=[{"conditions": {"type": "Stay"}}, {"conditions": {"type": "Stay"}}],
+            restrictions=[{"conditions": {"type": "Start"}}, {"conditions": {"type": "Start"}}],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
         ) as response:
             assert not response.is_closed
@@ -211,7 +211,7 @@ class TestRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -223,7 +223,7 @@ class TestRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -248,7 +248,7 @@ class TestRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -260,7 +260,7 @@ class TestRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -289,7 +289,7 @@ class TestRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -301,7 +301,7 @@ class TestRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -332,7 +332,7 @@ class TestRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -344,7 +344,7 @@ class TestRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -369,7 +369,7 @@ class TestRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -381,7 +381,7 @@ class TestRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -410,7 +410,7 @@ class TestRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -422,7 +422,7 @@ class TestRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -475,7 +475,7 @@ class TestAsyncRestrictions:
             end_utc="EndUtc",
             enterprise_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "4d0201db-36f5-428b-8d11-4f0a65e960cc"],
             exact_rate_ids=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
-            origin="User",
+            origin="Integration",
             rate_ids=["ed4b660b-19d0-434b-9360-a4de2ea42eda"],
             resource_category_ids=["34c29e73-c8db-4e93-b51b-981e42655e03"],
             restriction_ids=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
@@ -572,7 +572,7 @@ class TestAsyncRestrictions:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             client="x",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-            restrictions=[{"conditions": {"type": "Stay"}}, {"conditions": {"type": "Stay"}}],
+            restrictions=[{"conditions": {"type": "Start"}}, {"conditions": {"type": "Start"}}],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
         )
         assert_matches_type(RestrictionAddResponse, restriction, path=["response"])
@@ -584,7 +584,7 @@ class TestAsyncRestrictions:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             client="x",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-            restrictions=[{"conditions": {"type": "Stay"}}, {"conditions": {"type": "Stay"}}],
+            restrictions=[{"conditions": {"type": "Start"}}, {"conditions": {"type": "Start"}}],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
         )
 
@@ -600,7 +600,7 @@ class TestAsyncRestrictions:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             client="x",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
-            restrictions=[{"conditions": {"type": "Stay"}}, {"conditions": {"type": "Stay"}}],
+            restrictions=[{"conditions": {"type": "Start"}}, {"conditions": {"type": "Start"}}],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
         ) as response:
             assert not response.is_closed
@@ -629,7 +629,7 @@ class TestAsyncRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -641,7 +641,7 @@ class TestAsyncRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -666,7 +666,7 @@ class TestAsyncRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -678,7 +678,7 @@ class TestAsyncRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -707,7 +707,7 @@ class TestAsyncRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -719,7 +719,7 @@ class TestAsyncRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -750,7 +750,7 @@ class TestAsyncRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -762,7 +762,7 @@ class TestAsyncRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -787,7 +787,7 @@ class TestAsyncRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -799,7 +799,7 @@ class TestAsyncRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",
@@ -828,7 +828,7 @@ class TestAsyncRestrictions:
                         "tuesday": False,
                         "wednesday": False,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
                 {
                     "days": {
@@ -840,7 +840,7 @@ class TestAsyncRestrictions:
                         "tuesday": True,
                         "wednesday": True,
                     },
-                    "type": "Stay",
+                    "type": "Start",
                 },
             ],
             service_id="bd26d8db-86da-4f96-9efc-e5a4654a4a94",

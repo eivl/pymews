@@ -28,7 +28,7 @@ class TestCommands:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             command_id="aa20961f-6d9e-4b35-ad25-071213530aec",
-            state="Pending",
+            state="Processed",
         )
         assert_matches_type(object, command, path=["response"])
 
@@ -40,7 +40,7 @@ class TestCommands:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             command_id="aa20961f-6d9e-4b35-ad25-071213530aec",
-            state="Pending",
+            state="Processed",
             external_request_identifier={"value": "Value"},
             notes="Notes",
             progress=0,
@@ -55,7 +55,7 @@ class TestCommands:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             command_id="aa20961f-6d9e-4b35-ad25-071213530aec",
-            state="Pending",
+            state="Processed",
         )
 
         assert response.is_closed is True
@@ -71,7 +71,7 @@ class TestCommands:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             command_id="aa20961f-6d9e-4b35-ad25-071213530aec",
-            state="Pending",
+            state="Processed",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -389,7 +389,7 @@ class TestAsyncCommands:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             command_id="aa20961f-6d9e-4b35-ad25-071213530aec",
-            state="Pending",
+            state="Processed",
         )
         assert_matches_type(object, command, path=["response"])
 
@@ -401,7 +401,7 @@ class TestAsyncCommands:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             command_id="aa20961f-6d9e-4b35-ad25-071213530aec",
-            state="Pending",
+            state="Processed",
             external_request_identifier={"value": "Value"},
             notes="Notes",
             progress=0,
@@ -416,7 +416,7 @@ class TestAsyncCommands:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             command_id="aa20961f-6d9e-4b35-ad25-071213530aec",
-            state="Pending",
+            state="Processed",
         )
 
         assert response.is_closed is True
@@ -432,7 +432,7 @@ class TestAsyncCommands:
             client="Sample Client 1.0.0",
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             command_id="aa20961f-6d9e-4b35-ad25-071213530aec",
-            state="Pending",
+            state="Processed",
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"

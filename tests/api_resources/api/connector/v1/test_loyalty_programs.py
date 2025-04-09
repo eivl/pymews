@@ -104,7 +104,7 @@ class TestLoyaltyPrograms:
                 "count": 100,
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             codes=["string"],
             created_utc={
@@ -359,7 +359,7 @@ class TestAsyncLoyaltyPrograms:
                 "count": 100,
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             codes=["string"],
             created_utc={

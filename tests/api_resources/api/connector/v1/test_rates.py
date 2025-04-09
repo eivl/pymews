@@ -47,7 +47,7 @@ class TestRates:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             service_ids=["bd26d8db-86da-4f96-9efc-e5a4654a4a94"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             enterprise_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "4d0201db-36f5-428b-8d11-4f0a65e960cc"],
             extent={
                 "availability_block_assignments": True,
@@ -162,7 +162,7 @@ class TestRates:
             rates=[
                 {
                     "names": {"EN": "My rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "b9f25a45-9b9a-4b33-99bd-b06f008eb6f5",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
                 }
@@ -180,7 +180,7 @@ class TestRates:
             rates=[
                 {
                     "names": {"EN": "My rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "b9f25a45-9b9a-4b33-99bd-b06f008eb6f5",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
                     "accounting_category_id": "3620c660-a4ec-4e0f-a0bc-b06f008eb8bf",
@@ -224,7 +224,7 @@ class TestRates:
             rates=[
                 {
                     "names": {"EN": "My rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "b9f25a45-9b9a-4b33-99bd-b06f008eb6f5",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
                 }
@@ -246,7 +246,7 @@ class TestRates:
             rates=[
                 {
                     "names": {"EN": "My rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "b9f25a45-9b9a-4b33-99bd-b06f008eb6f5",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
                 }
@@ -340,10 +340,10 @@ class TestRates:
                 },
                 {
                     "names": {"en-US": "Dependent rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "eid:RG10",
                     "service_id": "eid:Stay",
-                    "type": "Public",
+                    "type": "Private",
                 },
             ],
         )
@@ -389,10 +389,10 @@ class TestRates:
                 },
                 {
                     "names": {"en-US": "Dependent rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "eid:RG10",
                     "service_id": "eid:Stay",
-                    "type": "Public",
+                    "type": "Private",
                     "accounting_category_id": "07781f3c-94b6-4b31-9175-03786a84cd50",
                     "business_segment_id": "dc9188f6-fb61-412c-b3fd-af32dab082ed",
                     "descriptions": {"en-US": "Dependent rate description."},
@@ -439,10 +439,10 @@ class TestRates:
                 },
                 {
                     "names": {"en-US": "Dependent rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "eid:RG10",
                     "service_id": "eid:Stay",
-                    "type": "Public",
+                    "type": "Private",
                 },
             ],
         )
@@ -469,10 +469,10 @@ class TestRates:
                 },
                 {
                     "names": {"en-US": "Dependent rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "eid:RG10",
                     "service_id": "eid:Stay",
-                    "type": "Public",
+                    "type": "Private",
                 },
             ],
         ) as response:
@@ -584,7 +584,7 @@ class TestAsyncRates:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             service_ids=["bd26d8db-86da-4f96-9efc-e5a4654a4a94"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             enterprise_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "4d0201db-36f5-428b-8d11-4f0a65e960cc"],
             extent={
                 "availability_block_assignments": True,
@@ -699,7 +699,7 @@ class TestAsyncRates:
             rates=[
                 {
                     "names": {"EN": "My rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "b9f25a45-9b9a-4b33-99bd-b06f008eb6f5",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
                 }
@@ -717,7 +717,7 @@ class TestAsyncRates:
             rates=[
                 {
                     "names": {"EN": "My rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "b9f25a45-9b9a-4b33-99bd-b06f008eb6f5",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
                     "accounting_category_id": "3620c660-a4ec-4e0f-a0bc-b06f008eb8bf",
@@ -761,7 +761,7 @@ class TestAsyncRates:
             rates=[
                 {
                     "names": {"EN": "My rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "b9f25a45-9b9a-4b33-99bd-b06f008eb6f5",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
                 }
@@ -783,7 +783,7 @@ class TestAsyncRates:
             rates=[
                 {
                     "names": {"EN": "My rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "b9f25a45-9b9a-4b33-99bd-b06f008eb6f5",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
                 }
@@ -877,10 +877,10 @@ class TestAsyncRates:
                 },
                 {
                     "names": {"en-US": "Dependent rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "eid:RG10",
                     "service_id": "eid:Stay",
-                    "type": "Public",
+                    "type": "Private",
                 },
             ],
         )
@@ -926,10 +926,10 @@ class TestAsyncRates:
                 },
                 {
                     "names": {"en-US": "Dependent rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "eid:RG10",
                     "service_id": "eid:Stay",
-                    "type": "Public",
+                    "type": "Private",
                     "accounting_category_id": "07781f3c-94b6-4b31-9175-03786a84cd50",
                     "business_segment_id": "dc9188f6-fb61-412c-b3fd-af32dab082ed",
                     "descriptions": {"en-US": "Dependent rate description."},
@@ -976,10 +976,10 @@ class TestAsyncRates:
                 },
                 {
                     "names": {"en-US": "Dependent rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "eid:RG10",
                     "service_id": "eid:Stay",
-                    "type": "Public",
+                    "type": "Private",
                 },
             ],
         )
@@ -1006,10 +1006,10 @@ class TestAsyncRates:
                 },
                 {
                     "names": {"en-US": "Dependent rate"},
-                    "pricing_type": "BaseRatePricing",
+                    "pricing_type": "DependentRatePricing",
                     "rate_group_id": "eid:RG10",
                     "service_id": "eid:Stay",
-                    "type": "Public",
+                    "type": "Private",
                 },
             ],
         ) as response:
