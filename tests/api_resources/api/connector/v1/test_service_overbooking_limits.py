@@ -44,7 +44,7 @@ class TestServiceOverbookingLimits:
                 "cursor": "e7f26210-10e7-462e-9da8-ae8300be8ab7",
             },
             service_ids=["bd26d8db-86da-4f96-9efc-e5a4654a4a94", "8c1bd738-a505-4b29-aa71-9ecc2982b843"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             colliding_utc={
                 "end_utc": parse_datetime("2024-11-30T00:00:00Z"),
                 "start_utc": parse_datetime("2024-11-01T00:00:00Z"),
@@ -282,7 +282,7 @@ class TestAsyncServiceOverbookingLimits:
                 "cursor": "e7f26210-10e7-462e-9da8-ae8300be8ab7",
             },
             service_ids=["bd26d8db-86da-4f96-9efc-e5a4654a4a94", "8c1bd738-a505-4b29-aa71-9ecc2982b843"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             colliding_utc={
                 "end_utc": parse_datetime("2024-11-30T00:00:00Z"),
                 "start_utc": parse_datetime("2024-11-01T00:00:00Z"),

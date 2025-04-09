@@ -188,7 +188,7 @@ class TestRoutingRules:
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             routing_rules=[
                 {
-                    "applicability": "Always",
+                    "applicability": "PrepaidOnly",
                     "company_id": "cd441e1a-6f19-4960-887a-af2a00d5d5f8",
                     "company_relation": "PartnerCompany",
                     "route_type": "AllStayItems",
@@ -197,8 +197,8 @@ class TestRoutingRules:
                 {
                     "applicability": "Always",
                     "company_id": "ddc23f8d-131d-44d6-b150-af2a00d5d5f8",
-                    "company_relation": "PartnerCompany",
-                    "route_type": "AllStayItems",
+                    "company_relation": "TravelAgency",
+                    "route_type": "SelectedStayItems",
                     "service_id": "0907a1b4-ef7a-4aa8-b8a1-af2a00d5ca22",
                 },
             ],
@@ -214,7 +214,7 @@ class TestRoutingRules:
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             routing_rules=[
                 {
-                    "applicability": "Always",
+                    "applicability": "PrepaidOnly",
                     "company_id": "cd441e1a-6f19-4960-887a-af2a00d5d5f8",
                     "company_relation": "PartnerCompany",
                     "route_type": "AllStayItems",
@@ -223,8 +223,8 @@ class TestRoutingRules:
                 {
                     "applicability": "Always",
                     "company_id": "ddc23f8d-131d-44d6-b150-af2a00d5d5f8",
-                    "company_relation": "PartnerCompany",
-                    "route_type": "AllStayItems",
+                    "company_relation": "TravelAgency",
+                    "route_type": "SelectedStayItems",
                     "service_id": "0907a1b4-ef7a-4aa8-b8a1-af2a00d5ca22",
                 },
             ],
@@ -244,7 +244,7 @@ class TestRoutingRules:
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             routing_rules=[
                 {
-                    "applicability": "Always",
+                    "applicability": "PrepaidOnly",
                     "company_id": "cd441e1a-6f19-4960-887a-af2a00d5d5f8",
                     "company_relation": "PartnerCompany",
                     "route_type": "AllStayItems",
@@ -253,8 +253,8 @@ class TestRoutingRules:
                 {
                     "applicability": "Always",
                     "company_id": "ddc23f8d-131d-44d6-b150-af2a00d5d5f8",
-                    "company_relation": "PartnerCompany",
-                    "route_type": "AllStayItems",
+                    "company_relation": "TravelAgency",
+                    "route_type": "SelectedStayItems",
                     "service_id": "0907a1b4-ef7a-4aa8-b8a1-af2a00d5ca22",
                 },
             ],
@@ -439,7 +439,7 @@ class TestAsyncRoutingRules:
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             routing_rules=[
                 {
-                    "applicability": "Always",
+                    "applicability": "PrepaidOnly",
                     "company_id": "cd441e1a-6f19-4960-887a-af2a00d5d5f8",
                     "company_relation": "PartnerCompany",
                     "route_type": "AllStayItems",
@@ -448,8 +448,8 @@ class TestAsyncRoutingRules:
                 {
                     "applicability": "Always",
                     "company_id": "ddc23f8d-131d-44d6-b150-af2a00d5d5f8",
-                    "company_relation": "PartnerCompany",
-                    "route_type": "AllStayItems",
+                    "company_relation": "TravelAgency",
+                    "route_type": "SelectedStayItems",
                     "service_id": "0907a1b4-ef7a-4aa8-b8a1-af2a00d5ca22",
                 },
             ],
@@ -465,7 +465,7 @@ class TestAsyncRoutingRules:
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             routing_rules=[
                 {
-                    "applicability": "Always",
+                    "applicability": "PrepaidOnly",
                     "company_id": "cd441e1a-6f19-4960-887a-af2a00d5d5f8",
                     "company_relation": "PartnerCompany",
                     "route_type": "AllStayItems",
@@ -474,8 +474,8 @@ class TestAsyncRoutingRules:
                 {
                     "applicability": "Always",
                     "company_id": "ddc23f8d-131d-44d6-b150-af2a00d5d5f8",
-                    "company_relation": "PartnerCompany",
-                    "route_type": "AllStayItems",
+                    "company_relation": "TravelAgency",
+                    "route_type": "SelectedStayItems",
                     "service_id": "0907a1b4-ef7a-4aa8-b8a1-af2a00d5ca22",
                 },
             ],
@@ -495,7 +495,7 @@ class TestAsyncRoutingRules:
             client_token="E0D439EE522F44368DC78E1BFB03710C-D24FB11DBE31D4621C4817E028D9E1D",
             routing_rules=[
                 {
-                    "applicability": "Always",
+                    "applicability": "PrepaidOnly",
                     "company_id": "cd441e1a-6f19-4960-887a-af2a00d5d5f8",
                     "company_relation": "PartnerCompany",
                     "route_type": "AllStayItems",
@@ -504,8 +504,8 @@ class TestAsyncRoutingRules:
                 {
                     "applicability": "Always",
                     "company_id": "ddc23f8d-131d-44d6-b150-af2a00d5d5f8",
-                    "company_relation": "PartnerCompany",
-                    "route_type": "AllStayItems",
+                    "company_relation": "TravelAgency",
+                    "route_type": "SelectedStayItems",
                     "service_id": "0907a1b4-ef7a-4aa8-b8a1-af2a00d5ca22",
                 },
             ],

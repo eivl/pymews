@@ -48,7 +48,7 @@ class TestIdentityDocuments:
                     "issuing_city": {"value": "Prague"},
                     "issuing_country_code": {"value": "CZ"},
                     "number": {"value": "123456789"},
-                    "type": {"value": "IdentityCard"},
+                    "type": {"value": "Passport"},
                 }
             ],
             chain_id="3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -217,7 +217,7 @@ class TestIdentityDocuments:
                 {
                     "customer_id": "e8a72a69-c20b-4278-b699-ab0400a32ecc",
                     "number": "123456789",
-                    "type": "IdentityCard",
+                    "type": "Passport",
                 }
             ],
         )
@@ -234,7 +234,7 @@ class TestIdentityDocuments:
                 {
                     "customer_id": "e8a72a69-c20b-4278-b699-ab0400a32ecc",
                     "number": "123456789",
-                    "type": "IdentityCard",
+                    "type": "Passport",
                     "expiration_date": parse_date("2019-12-27"),
                     "identity_document_support_number": "S-123456",
                     "issuance_date": parse_date("2019-12-27"),
@@ -257,7 +257,7 @@ class TestIdentityDocuments:
                 {
                     "customer_id": "e8a72a69-c20b-4278-b699-ab0400a32ecc",
                     "number": "123456789",
-                    "type": "IdentityCard",
+                    "type": "Passport",
                 }
             ],
         )
@@ -278,7 +278,7 @@ class TestIdentityDocuments:
                 {
                     "customer_id": "e8a72a69-c20b-4278-b699-ab0400a32ecc",
                     "number": "123456789",
-                    "type": "IdentityCard",
+                    "type": "Passport",
                 }
             ],
         ) as response:
@@ -376,7 +376,7 @@ class TestAsyncIdentityDocuments:
                     "issuing_city": {"value": "Prague"},
                     "issuing_country_code": {"value": "CZ"},
                     "number": {"value": "123456789"},
-                    "type": {"value": "IdentityCard"},
+                    "type": {"value": "Passport"},
                 }
             ],
             chain_id="3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -545,7 +545,7 @@ class TestAsyncIdentityDocuments:
                 {
                     "customer_id": "e8a72a69-c20b-4278-b699-ab0400a32ecc",
                     "number": "123456789",
-                    "type": "IdentityCard",
+                    "type": "Passport",
                 }
             ],
         )
@@ -562,7 +562,7 @@ class TestAsyncIdentityDocuments:
                 {
                     "customer_id": "e8a72a69-c20b-4278-b699-ab0400a32ecc",
                     "number": "123456789",
-                    "type": "IdentityCard",
+                    "type": "Passport",
                     "expiration_date": parse_date("2019-12-27"),
                     "identity_document_support_number": "S-123456",
                     "issuance_date": parse_date("2019-12-27"),
@@ -585,7 +585,7 @@ class TestAsyncIdentityDocuments:
                 {
                     "customer_id": "e8a72a69-c20b-4278-b699-ab0400a32ecc",
                     "number": "123456789",
-                    "type": "IdentityCard",
+                    "type": "Passport",
                 }
             ],
         )
@@ -606,7 +606,7 @@ class TestAsyncIdentityDocuments:
                 {
                     "customer_id": "e8a72a69-c20b-4278-b699-ab0400a32ecc",
                     "number": "123456789",
-                    "type": "IdentityCard",
+                    "type": "Passport",
                 }
             ],
         ) as response:

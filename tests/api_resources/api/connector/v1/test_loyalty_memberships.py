@@ -110,7 +110,7 @@ class TestLoyaltyMemberships:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             account_ids=["87d4c7c4-4832-4341-8b54-e45c1a73df34", "0ed43ab7-4592-4c99-906a-426588de1c00"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             codes=["string"],
             created_utc={
@@ -119,7 +119,7 @@ class TestLoyaltyMemberships:
             },
             loyalty_membership_ids=["3f4d9db2-9910-4a63-b9f0-e94a13fab9ac", "ea7da00f-fdc9-4014-b0f7-71003b87e3d0"],
             loyalty_program_ids=["3ed9e2f3-4bba-4df6-8d41-ab1b009b6425", "8a98965a-7c03-48a1-a28c-ab1b009b53c8"],
-            membership_states=["New", "Pending"],
+            membership_states=["New", "Enrolled"],
             updated_utc={
                 "end_utc": parse_datetime("2022-10-20T00:00:00Z"),
                 "start_utc": parse_datetime("2022-10-15T00:00:00Z"),
@@ -381,7 +381,7 @@ class TestAsyncLoyaltyMemberships:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             account_ids=["87d4c7c4-4832-4341-8b54-e45c1a73df34", "0ed43ab7-4592-4c99-906a-426588de1c00"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             codes=["string"],
             created_utc={
@@ -390,7 +390,7 @@ class TestAsyncLoyaltyMemberships:
             },
             loyalty_membership_ids=["3f4d9db2-9910-4a63-b9f0-e94a13fab9ac", "ea7da00f-fdc9-4014-b0f7-71003b87e3d0"],
             loyalty_program_ids=["3ed9e2f3-4bba-4df6-8d41-ab1b009b6425", "8a98965a-7c03-48a1-a28c-ab1b009b53c8"],
-            membership_states=["New", "Pending"],
+            membership_states=["New", "Enrolled"],
             updated_utc={
                 "end_utc": parse_datetime("2022-10-20T00:00:00Z"),
                 "start_utc": parse_datetime("2022-10-15T00:00:00Z"),

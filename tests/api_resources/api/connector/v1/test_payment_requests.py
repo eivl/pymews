@@ -46,7 +46,7 @@ class TestPaymentRequests:
             enterprise_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "4d0201db-36f5-428b-8d11-4f0a65e960cc"],
             payment_request_ids=["bcc76295-4e47-4cf1-a7cb-afae00bd1c35"],
             reservation_ids=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
-            states=["Pending", "Completed"],
+            states=["Pending", "Expired"],
             updated_utc={
                 "end_utc": parse_datetime("2020-01-10T00:00:00Z"),
                 "start_utc": parse_datetime("2020-01-05T00:00:00Z"),
@@ -102,7 +102,7 @@ class TestPaymentRequests:
                     },
                     "description": "Payment required",
                     "expiration_utc": parse_datetime("2023-02-20T12:00:00.000Z"),
-                    "reason": "Other",
+                    "reason": "PaymentCardMissing",
                     "type": "Payment",
                 }
             ],
@@ -125,7 +125,7 @@ class TestPaymentRequests:
                     },
                     "description": "Payment required",
                     "expiration_utc": parse_datetime("2023-02-20T12:00:00.000Z"),
-                    "reason": "Other",
+                    "reason": "PaymentCardMissing",
                     "type": "Payment",
                     "notes": "Internal notes.",
                     "reservation_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
@@ -151,7 +151,7 @@ class TestPaymentRequests:
                     },
                     "description": "Payment required",
                     "expiration_utc": parse_datetime("2023-02-20T12:00:00.000Z"),
-                    "reason": "Other",
+                    "reason": "PaymentCardMissing",
                     "type": "Payment",
                 }
             ],
@@ -178,7 +178,7 @@ class TestPaymentRequests:
                     },
                     "description": "Payment required",
                     "expiration_utc": parse_datetime("2023-02-20T12:00:00.000Z"),
-                    "reason": "Other",
+                    "reason": "PaymentCardMissing",
                     "type": "Payment",
                 }
             ],
@@ -264,7 +264,7 @@ class TestAsyncPaymentRequests:
             enterprise_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "4d0201db-36f5-428b-8d11-4f0a65e960cc"],
             payment_request_ids=["bcc76295-4e47-4cf1-a7cb-afae00bd1c35"],
             reservation_ids=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
-            states=["Pending", "Completed"],
+            states=["Pending", "Expired"],
             updated_utc={
                 "end_utc": parse_datetime("2020-01-10T00:00:00Z"),
                 "start_utc": parse_datetime("2020-01-05T00:00:00Z"),
@@ -320,7 +320,7 @@ class TestAsyncPaymentRequests:
                     },
                     "description": "Payment required",
                     "expiration_utc": parse_datetime("2023-02-20T12:00:00.000Z"),
-                    "reason": "Other",
+                    "reason": "PaymentCardMissing",
                     "type": "Payment",
                 }
             ],
@@ -343,7 +343,7 @@ class TestAsyncPaymentRequests:
                     },
                     "description": "Payment required",
                     "expiration_utc": parse_datetime("2023-02-20T12:00:00.000Z"),
-                    "reason": "Other",
+                    "reason": "PaymentCardMissing",
                     "type": "Payment",
                     "notes": "Internal notes.",
                     "reservation_id": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
@@ -369,7 +369,7 @@ class TestAsyncPaymentRequests:
                     },
                     "description": "Payment required",
                     "expiration_utc": parse_datetime("2023-02-20T12:00:00.000Z"),
-                    "reason": "Other",
+                    "reason": "PaymentCardMissing",
                     "type": "Payment",
                 }
             ],
@@ -396,7 +396,7 @@ class TestAsyncPaymentRequests:
                     },
                     "description": "Payment required",
                     "expiration_utc": parse_datetime("2023-02-20T12:00:00.000Z"),
-                    "reason": "Other",
+                    "reason": "PaymentCardMissing",
                     "type": "Payment",
                 }
             ],

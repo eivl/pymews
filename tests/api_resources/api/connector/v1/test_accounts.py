@@ -27,7 +27,7 @@ class TestAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_updates=[
                 {
-                    "discriminator": "Customer",
+                    "discriminator": "Company",
                     "id": "3ff104e6-3ba8-4dfc-8d35-b0ec00c5fd4c",
                 },
                 {
@@ -47,7 +47,7 @@ class TestAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_updates=[
                 {
-                    "discriminator": "Customer",
+                    "discriminator": "Company",
                     "id": "3ff104e6-3ba8-4dfc-8d35-b0ec00c5fd4c",
                     "company": {
                         "accounting_code": {"value": None},
@@ -250,7 +250,7 @@ class TestAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_updates=[
                 {
-                    "discriminator": "Customer",
+                    "discriminator": "Company",
                     "id": "3ff104e6-3ba8-4dfc-8d35-b0ec00c5fd4c",
                 },
                 {
@@ -274,7 +274,7 @@ class TestAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_updates=[
                 {
-                    "discriminator": "Customer",
+                    "discriminator": "Company",
                     "id": "3ff104e6-3ba8-4dfc-8d35-b0ec00c5fd4c",
                 },
                 {
@@ -367,7 +367,7 @@ class TestAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_merge_parameters=[
                 {
-                    "account_type": "Customer",
+                    "account_type": "Company",
                     "source_account_ids": [
                         "b0c10ced-34eb-44b4-92e8-af5b008f3fb4",
                         "5176d000-bf17-40be-b140-9041d2b70eee",
@@ -395,7 +395,7 @@ class TestAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_merge_parameters=[
                 {
-                    "account_type": "Customer",
+                    "account_type": "Company",
                     "source_account_ids": [
                         "b0c10ced-34eb-44b4-92e8-af5b008f3fb4",
                         "5176d000-bf17-40be-b140-9041d2b70eee",
@@ -427,7 +427,7 @@ class TestAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_merge_parameters=[
                 {
-                    "account_type": "Customer",
+                    "account_type": "Company",
                     "source_account_ids": [
                         "b0c10ced-34eb-44b4-92e8-af5b008f3fb4",
                         "5176d000-bf17-40be-b140-9041d2b70eee",
@@ -465,7 +465,7 @@ class TestAsyncAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_updates=[
                 {
-                    "discriminator": "Customer",
+                    "discriminator": "Company",
                     "id": "3ff104e6-3ba8-4dfc-8d35-b0ec00c5fd4c",
                 },
                 {
@@ -485,7 +485,7 @@ class TestAsyncAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_updates=[
                 {
-                    "discriminator": "Customer",
+                    "discriminator": "Company",
                     "id": "3ff104e6-3ba8-4dfc-8d35-b0ec00c5fd4c",
                     "company": {
                         "accounting_code": {"value": None},
@@ -688,7 +688,7 @@ class TestAsyncAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_updates=[
                 {
-                    "discriminator": "Customer",
+                    "discriminator": "Company",
                     "id": "3ff104e6-3ba8-4dfc-8d35-b0ec00c5fd4c",
                 },
                 {
@@ -712,7 +712,7 @@ class TestAsyncAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_updates=[
                 {
-                    "discriminator": "Customer",
+                    "discriminator": "Company",
                     "id": "3ff104e6-3ba8-4dfc-8d35-b0ec00c5fd4c",
                 },
                 {
@@ -805,7 +805,7 @@ class TestAsyncAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_merge_parameters=[
                 {
-                    "account_type": "Customer",
+                    "account_type": "Company",
                     "source_account_ids": [
                         "b0c10ced-34eb-44b4-92e8-af5b008f3fb4",
                         "5176d000-bf17-40be-b140-9041d2b70eee",
@@ -833,7 +833,7 @@ class TestAsyncAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_merge_parameters=[
                 {
-                    "account_type": "Customer",
+                    "account_type": "Company",
                     "source_account_ids": [
                         "b0c10ced-34eb-44b4-92e8-af5b008f3fb4",
                         "5176d000-bf17-40be-b140-9041d2b70eee",
@@ -865,7 +865,7 @@ class TestAsyncAccounts:
             access_token="C66EF7B239D24632943D115EDE9CB810-EA00F8FD8294692C940F6B5A8F9453D",
             account_merge_parameters=[
                 {
-                    "account_type": "Customer",
+                    "account_type": "Company",
                     "source_account_ids": [
                         "b0c10ced-34eb-44b4-92e8-af5b008f3fb4",
                         "5176d000-bf17-40be-b140-9041d2b70eee",
