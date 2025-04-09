@@ -65,7 +65,7 @@ class TestVouchers:
                     "name": {"value": "Weekend Voucher"},
                     "occupiable_interval_end_utc": {"value": "2024-01-01T22:00:00Z"},
                     "occupiable_interval_start_utc": {"value": "2023-12-31T22:00:00Z"},
-                    "type": {"value": "Public"},
+                    "type": {"value": "PartnerCompany"},
                 },
             ],
             enterprise_id="3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -142,7 +142,7 @@ class TestVouchers:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             service_ids=["bd26d8db-86da-4f96-9efc-e5a4654a4a94"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             company_ids=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             enterprise_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "4d0201db-36f5-428b-8d11-4f0a65e960cc"],
             external_identifiers=["Voucher-001", "Voucher-002"],
@@ -262,7 +262,7 @@ class TestVouchers:
                 {
                     "name": "Sample company voucher",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
-                    "type": "Public",
+                    "type": "PartnerCompany",
                 },
             ],
         )
@@ -292,7 +292,7 @@ class TestVouchers:
                 {
                     "name": "Sample company voucher",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
-                    "type": "Public",
+                    "type": "PartnerCompany",
                     "assigned_rate_ids": [
                         "181f8cdd-04ee-4bf5-ba3e-44c108eca3cb",
                         "8bebeddc-9137-432d-810c-1b998a90ac9a",
@@ -323,7 +323,7 @@ class TestVouchers:
                 {
                     "name": "Sample company voucher",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
-                    "type": "Public",
+                    "type": "PartnerCompany",
                 },
             ],
         )
@@ -349,7 +349,7 @@ class TestVouchers:
                 {
                     "name": "Sample company voucher",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
-                    "type": "Public",
+                    "type": "PartnerCompany",
                 },
             ],
         ) as response:
@@ -409,7 +409,7 @@ class TestAsyncVouchers:
                     "name": {"value": "Weekend Voucher"},
                     "occupiable_interval_end_utc": {"value": "2024-01-01T22:00:00Z"},
                     "occupiable_interval_start_utc": {"value": "2023-12-31T22:00:00Z"},
-                    "type": {"value": "Public"},
+                    "type": {"value": "PartnerCompany"},
                 },
             ],
             enterprise_id="3fa85f64-5717-4562-b3fc-2c963f66afa6",
@@ -486,7 +486,7 @@ class TestAsyncVouchers:
                 "cursor": "182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             },
             service_ids=["bd26d8db-86da-4f96-9efc-e5a4654a4a94"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             company_ids=["182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e"],
             enterprise_ids=["3fa85f64-5717-4562-b3fc-2c963f66afa6", "4d0201db-36f5-428b-8d11-4f0a65e960cc"],
             external_identifiers=["Voucher-001", "Voucher-002"],
@@ -606,7 +606,7 @@ class TestAsyncVouchers:
                 {
                     "name": "Sample company voucher",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
-                    "type": "Public",
+                    "type": "PartnerCompany",
                 },
             ],
         )
@@ -636,7 +636,7 @@ class TestAsyncVouchers:
                 {
                     "name": "Sample company voucher",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
-                    "type": "Public",
+                    "type": "PartnerCompany",
                     "assigned_rate_ids": [
                         "181f8cdd-04ee-4bf5-ba3e-44c108eca3cb",
                         "8bebeddc-9137-432d-810c-1b998a90ac9a",
@@ -667,7 +667,7 @@ class TestAsyncVouchers:
                 {
                     "name": "Sample company voucher",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
-                    "type": "Public",
+                    "type": "PartnerCompany",
                 },
             ],
         )
@@ -693,7 +693,7 @@ class TestAsyncVouchers:
                 {
                     "name": "Sample company voucher",
                     "service_id": "bd26d8db-86da-4f96-9efc-e5a4654a4a94",
-                    "type": "Public",
+                    "type": "PartnerCompany",
                 },
             ],
         ) as response:

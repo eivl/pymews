@@ -135,7 +135,7 @@ class TestAccountNotes:
             },
             account_ids=["a6738390-c241-45b7-8e46-14f47207abe5", "435d4d5f-d14f-48dc-a47e-0481fc28ead0"],
             account_note_ids=["3ed9e2f3-4bba-4df6-8d41-ab1b009b6425", "8a98965a-7c03-48a1-a28c-ab1b009b53c8"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             updated_utc={
                 "end_utc": parse_datetime("2022-10-17T00:00:00Z"),
@@ -239,7 +239,7 @@ class TestAccountNotes:
             account_notes=[
                 {
                     "account_id": "8ddea57b-6a5c-4eec-8c4c-24467dce118e",
-                    "classifications": ["General"],
+                    "classifications": ["FamilyRelations"],
                     "content": "Brother of the CEO",
                 }
             ],
@@ -256,7 +256,7 @@ class TestAccountNotes:
             account_notes=[
                 {
                     "account_id": "8ddea57b-6a5c-4eec-8c4c-24467dce118e",
-                    "classifications": ["General"],
+                    "classifications": ["FamilyRelations"],
                     "content": "Brother of the CEO",
                 }
             ],
@@ -274,7 +274,7 @@ class TestAccountNotes:
             account_notes=[
                 {
                     "account_id": "8ddea57b-6a5c-4eec-8c4c-24467dce118e",
-                    "classifications": ["General"],
+                    "classifications": ["FamilyRelations"],
                     "content": "Brother of the CEO",
                 }
             ],
@@ -295,7 +295,7 @@ class TestAccountNotes:
             account_notes=[
                 {
                     "account_id": "8ddea57b-6a5c-4eec-8c4c-24467dce118e",
-                    "classifications": ["General"],
+                    "classifications": ["FamilyRelations"],
                     "content": "Brother of the CEO",
                 }
             ],
@@ -427,7 +427,7 @@ class TestAsyncAccountNotes:
             },
             account_ids=["a6738390-c241-45b7-8e46-14f47207abe5", "435d4d5f-d14f-48dc-a47e-0481fc28ead0"],
             account_note_ids=["3ed9e2f3-4bba-4df6-8d41-ab1b009b6425", "8a98965a-7c03-48a1-a28c-ab1b009b53c8"],
-            activity_states=["Deleted"],
+            activity_states=["Active"],
             chain_ids=["1df21f06-0cfc-4960-9c58-a3bf1261663e", "5fcd1933-22f2-40b9-84da-7db04cbecec2"],
             updated_utc={
                 "end_utc": parse_datetime("2022-10-17T00:00:00Z"),
@@ -531,7 +531,7 @@ class TestAsyncAccountNotes:
             account_notes=[
                 {
                     "account_id": "8ddea57b-6a5c-4eec-8c4c-24467dce118e",
-                    "classifications": ["General"],
+                    "classifications": ["FamilyRelations"],
                     "content": "Brother of the CEO",
                 }
             ],
@@ -548,7 +548,7 @@ class TestAsyncAccountNotes:
             account_notes=[
                 {
                     "account_id": "8ddea57b-6a5c-4eec-8c4c-24467dce118e",
-                    "classifications": ["General"],
+                    "classifications": ["FamilyRelations"],
                     "content": "Brother of the CEO",
                 }
             ],
@@ -566,7 +566,7 @@ class TestAsyncAccountNotes:
             account_notes=[
                 {
                     "account_id": "8ddea57b-6a5c-4eec-8c4c-24467dce118e",
-                    "classifications": ["General"],
+                    "classifications": ["FamilyRelations"],
                     "content": "Brother of the CEO",
                 }
             ],
@@ -587,7 +587,7 @@ class TestAsyncAccountNotes:
             account_notes=[
                 {
                     "account_id": "8ddea57b-6a5c-4eec-8c4c-24467dce118e",
-                    "classifications": ["General"],
+                    "classifications": ["FamilyRelations"],
                     "content": "Brother of the CEO",
                 }
             ],

@@ -287,7 +287,7 @@ class TestReservations:
                         }
                     ],
                     "released_utc": None,
-                    "state": "Inquired",
+                    "state": "Confirmed",
                     "time_unit_amount": {
                         "currency": "x",
                         "tax_codes": ["string"],
@@ -758,7 +758,7 @@ class TestReservations:
             reservation_ids=["db6cad34-9a91-448b-bea1-abbe01240d9c"],
             service_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             start_utc=parse_datetime("2016-01-01T00:00:00Z"),
-            states=["Enquired"],
+            states=["Started"],
             time_filter="Colliding",
         )
         assert_matches_type(ReservationResult, reservation, path=["response"])
@@ -1542,7 +1542,7 @@ class TestAsyncReservations:
                         }
                     ],
                     "released_utc": None,
-                    "state": "Inquired",
+                    "state": "Confirmed",
                     "time_unit_amount": {
                         "currency": "x",
                         "tax_codes": ["string"],
@@ -2013,7 +2013,7 @@ class TestAsyncReservations:
             reservation_ids=["db6cad34-9a91-448b-bea1-abbe01240d9c"],
             service_id="182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e",
             start_utc=parse_datetime("2016-01-01T00:00:00Z"),
-            states=["Enquired"],
+            states=["Started"],
             time_filter="Colliding",
         )
         assert_matches_type(ReservationResult, reservation, path=["response"])

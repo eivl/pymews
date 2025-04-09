@@ -159,7 +159,7 @@ class TestResourceBlocks:
                     "name": "Resource block 2",
                     "resource_id": "f7c4b4f5-ac83-4977-a41a-63d27cc6e3e9",
                     "start_utc": parse_datetime("2019-10-15T10:00:00Z"),
-                    "type": "OutOfOrder",
+                    "type": "InternalUse",
                 },
             ],
         )
@@ -185,7 +185,7 @@ class TestResourceBlocks:
                     "name": "Resource block 2",
                     "resource_id": "f7c4b4f5-ac83-4977-a41a-63d27cc6e3e9",
                     "start_utc": parse_datetime("2019-10-15T10:00:00Z"),
-                    "type": "OutOfOrder",
+                    "type": "InternalUse",
                 },
             ],
         )
@@ -215,7 +215,7 @@ class TestResourceBlocks:
                     "name": "Resource block 2",
                     "resource_id": "f7c4b4f5-ac83-4977-a41a-63d27cc6e3e9",
                     "start_utc": parse_datetime("2019-10-15T10:00:00Z"),
-                    "type": "OutOfOrder",
+                    "type": "InternalUse",
                 },
             ],
         ) as response:
@@ -370,7 +370,7 @@ class TestAsyncResourceBlocks:
                     "name": "Resource block 2",
                     "resource_id": "f7c4b4f5-ac83-4977-a41a-63d27cc6e3e9",
                     "start_utc": parse_datetime("2019-10-15T10:00:00Z"),
-                    "type": "OutOfOrder",
+                    "type": "InternalUse",
                 },
             ],
         )
@@ -396,7 +396,7 @@ class TestAsyncResourceBlocks:
                     "name": "Resource block 2",
                     "resource_id": "f7c4b4f5-ac83-4977-a41a-63d27cc6e3e9",
                     "start_utc": parse_datetime("2019-10-15T10:00:00Z"),
-                    "type": "OutOfOrder",
+                    "type": "InternalUse",
                 },
             ],
         )
@@ -426,7 +426,7 @@ class TestAsyncResourceBlocks:
                     "name": "Resource block 2",
                     "resource_id": "f7c4b4f5-ac83-4977-a41a-63d27cc6e3e9",
                     "start_utc": parse_datetime("2019-10-15T10:00:00Z"),
-                    "type": "OutOfOrder",
+                    "type": "InternalUse",
                 },
             ],
         ) as response:
